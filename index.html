@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxora Studio | Luxury Wedding & Professional Photography</title>
+  <meta name="description" content="Luxora Studio captures weddings, pre-weddings, cinematic stories and special moments with premium luxury photography and videography.">
+  <meta name="keywords" content="wedding photography, luxury indian wedding, pre-wedding shoot, cinematic videography, event photographer, Delhi photographer">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Luxora Studio | Luxury Wedding & Professional Photography">
+  <meta property="og:description" content="We capture your special moments in the most beautiful way. Premium wedding photography and cinematic videography studio.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=1200">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'><path d='M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">LUXORA</span>
+          <span class="nav-logo-sub">STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+        <a href="#services" class="nav-link">SERVICES</a>
+        <a href="#packages" class="nav-link">PACKAGES</a>
+        <a href="#reviews" class="nav-link">REVIEWS</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="btn btn-primary btn-sm" id="nav-book-btn">BOOK NOW</button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-subtitle">CAPTURING MEMORIES</span>
+        <h1 class="hero-title">THAT LAST <span>A LIFETIME</span></h1>
+        <p class="hero-description">We capture your special moments in the most beautiful way with cinematic photography & timeless storytelling.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="hero-book-btn">BOOK YOUR SHOOT</button>
+          <button class="btn btn-outline" id="hero-showreel-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            WATCH SHOWREEL
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=1000" alt="Indian Bride and Groom - Luxora Studio" class="hero-image" id="hero-main-img">
+          <div class="hero-image-overlay"></div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-icon">★</div>
+          <div>
+            <div class="hero-badge-title">Luxury Wedding Studio</div>
+            <div class="hero-badge-sub">Award Winning Cinematography</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Action Sidebar (Right side) -->
+  <div class="floating-vertical-bar">
+    <a href="tel:+919876543210" class="floating-action-btn" title="Call Now">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/919876543210?text=Hello%20Luxora%20Studio%2C%20I%20am%20interested%20in%20booking%20a%20photography%20package." target="_blank" rel="noopener" class="floating-action-btn" title="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16.75 13.96c-.25-.13-1.47-.72-1.7-.81-.22-.09-.39-.13-.56.12-.17.25-.66.81-.81.98-.15.17-.31.19-.56.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.1-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.36-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.22.25-.86.84-.86 2.06 0 1.22.89 2.4 1.01 2.56.13.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3zm-4.75 8.04c-1.84 0-3.55-.49-5.03-1.34l-.36-.21-3.74.98 1-3.64-.23-.37C2.77 15.93 2.25 14.03 2.25 12c0-5.38 4.37-9.75 9.75-9.75s9.75 4.37 9.75 9.75-4.37 9.75-9.75 9.75z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="https://instagram.com/luxorastudio_official" target="_blank" rel="noopener" class="floating-action-btn" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      <span>Instagram</span>
+    </a>
+  </div>
+
+  <!-- Bottom Right Floating WhatsApp Circular Button -->
+  <a href="https://wa.me/919876543210?text=Hello%20Luxora%20Studio%2C%20I%20am%20interested%20in%20booking%20a%20photography%20package." target="_blank" rel="noopener" class="floating-whatsapp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M16.75 13.96c-.25-.13-1.47-.72-1.7-.81-.22-.09-.39-.13-.56.12-.17.25-.66.81-.81.98-.15.17-.31.19-.56.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.1-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.36-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.22.25-.86.84-.86 2.06 0 1.22.89 2.4 1.01 2.56.13.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3zm-4.75 8.04c-1.84 0-3.55-.49-5.03-1.34l-.36-.21-3.74.98 1-3.64-.23-.37C2.77 15.93 2.25 14.03 2.25 12c0-5.38 4.37-9.75 9.75-9.75s9.75 4.37 9.75 9.75-4.37 9.75-9.75 9.75z"/>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       STATISTICS SECTION
+       ========================================================================== -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="stat-number" data-target="500">0+</div>
+          <div class="stat-label">Shoots Completed</div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="stat-number" data-target="300">0+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="stat-number" data-target="10">0+</div>
+          <div class="stat-label">Awards Won</div>
+        </div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="stat-number" data-target="7">0+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-image-stack">
+        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=900" alt="Luxora Photography Studio Team" class="about-image-main">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" alt="Indian Wedding Couple Portrait" class="about-image-secondary">
+      </div>
+
+      <div class="about-content">
+        <span class="section-label">ABOUT LUXORA STUDIO</span>
+        <h2 class="section-title" style="text-align: left;">CRAFTING TIMELESS STORIES</h2>
+        <p class="about-content-text">At Luxora Studio, we believe every wedding is an artistic masterpiece waiting to unfold. With over 7 years of luxury wedding coverage, our team blends candid emotion, royal aesthetics, and cinematic artistry to preserve your most cherished memories.</p>
+        <p class="about-content-text">From grand palace celebrations in Jaipur to intimate sunset beach vows in Goa, our passion lies in catching authentic smiles, teardrops of joy, and unscripted magic.</p>
+
+        <div class="about-features">
+          <div class="about-feature-item">
+            <svg class="about-feature-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+            <span class="about-feature-text">Award-Winning Team</span>
+          </div>
+          <div class="about-feature-item">
+            <svg class="about-feature-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+            <span class="about-feature-text">Ultra HD 4K & Drone</span>
+          </div>
+          <div class="about-feature-item">
+            <svg class="about-feature-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+            <span class="about-feature-text">Candid & Regal Style</span>
+          </div>
+          <div class="about-feature-item">
+            <svg class="about-feature-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+            <span class="about-feature-text">14-Day Delivery</span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="about-work-btn">WORK WITH US</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PORTFOLIO SECTION
+       ========================================================================== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">OUR WORK</span>
+        <h2 class="section-title">PORTFOLIO</h2>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="wedding">WEDDING</button>
+        <button class="filter-btn" data-filter="pre-wedding">PRE-WEDDING</button>
+        <button class="filter-btn" data-filter="cinematic">CINEMATIC</button>
+        <button class="filter-btn" data-filter="events">EVENTS</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Item 1: Royal Wedding -->
+        <div class="portfolio-item" data-category="wedding" data-src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=1200" data-title="Royal Heritage Wedding" data-desc="Jaipur Palace Grand Ceremony">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=600" alt="Royal Indian Wedding Couple">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">WEDDING</span>
+            <h3 class="portfolio-title">Royal Heritage Wedding</h3>
+          </div>
+        </div>
+
+        <!-- Item 2: Pre-Wedding Romantic -->
+        <div class="portfolio-item" data-category="pre-wedding" data-src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200" data-title="Sunset Romance" data-desc="Udaipur Lake Pre-Wedding Shoot">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" alt="Pre-Wedding Couple">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">PRE-WEDDING</span>
+            <h3 class="portfolio-title">Sunset Romance</h3>
+          </div>
+        </div>
+
+        <!-- Item 3: Cinematic Monochrome -->
+        <div class="portfolio-item" data-category="cinematic" data-src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=1200" data-title="Eternal Promises" data-desc="Cinematic Portrait Session">
+          <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=600" alt="Cinematic Monochrome Portrait">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">CINEMATIC</span>
+            <h3 class="portfolio-title">Eternal Promises</h3>
+          </div>
+        </div>
+
+        <!-- Item 4: Wedding Night Glow -->
+        <div class="portfolio-item" data-category="wedding" data-src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=1200" data-title="Golden Vows" data-desc="Night Phere & Fairy Lights">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=600" alt="Wedding Bride Night Glow">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">WEDDING</span>
+            <h3 class="portfolio-title">Golden Vows</h3>
+          </div>
+        </div>
+
+        <!-- Item 5: Events Gala -->
+        <div class="portfolio-item" data-category="events" data-src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1200" data-title="Sangeet Celebration" data-desc="Luxury Event & Reception">
+          <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=600" alt="Sangeet Event Celebration">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">EVENTS</span>
+            <h3 class="portfolio-title">Sangeet Night Gala</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-center-btn">
+        <button class="btn btn-outline" id="view-full-gallery-btn">VIEW FULL GALLERY</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">OUR SERVICES</span>
+        <h2 class="section-title">WHAT WE DO</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Wedding -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">WEDDING</h3>
+          <p class="service-desc">Capturing your big day with timeless memories and royal splendor.</p>
+        </div>
+
+        <!-- Service 2: Pre-Wedding -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">PRE-WEDDING</h3>
+          <p class="service-desc">Beautiful pre-wedding shoots at exotic dream locations worldwide.</p>
+        </div>
+
+        <!-- Service 3: Cinematic Videography -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">CINEMATIC VIDEOGRAPHY</h3>
+          <p class="service-desc">Cinematic films and 4K teasers that weave your unique love story.</p>
+        </div>
+
+        <!-- Service 4: Events -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">EVENTS</h3>
+          <p class="service-desc">From grand Sangeet nights to corporate galas, we cover it all seamlessly.</p>
+        </div>
+
+        <!-- Service 5: Baby & Maternity -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">BABY & MATERNITY</h3>
+          <p class="service-desc">Preserving your family's precious milestone moments forever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PACKAGES SECTION
+       ========================================================================== -->
+  <section class="packages-section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">PACKAGES</span>
+        <h2 class="section-title">OUR PACKAGES</h2>
+      </div>
+
+      <div class="packages-grid">
+        <!-- BASIC PACKAGE -->
+        <div class="package-card">
+          <h3 class="package-name">BASIC</h3>
+          <div class="package-price">₹19,999</div>
+          <div class="package-features">
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>1 Day Event Coverage</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>300+ Edited Photos</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Highlight Video (3–5 Min)</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Online Private Gallery</span>
+            </div>
+          </div>
+          <button class="btn btn-outline plan-choose-btn" data-package="Basic" data-price="₹19,999">CHOOSE PLAN</button>
+        </div>
+
+        <!-- PREMIUM PACKAGE (POPULAR) -->
+        <div class="package-card popular">
+          <div class="popular-badge">POPULAR</div>
+          <h3 class="package-name">PREMIUM</h3>
+          <div class="package-price">₹39,999</div>
+          <div class="package-features">
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>2 Day Event Coverage</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>600+ Edited Photos</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Highlight Video (5–7 Min)</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Cinematic Video (15 Min)</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Photo Album (12x18)</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Online Private Gallery</span>
+            </div>
+          </div>
+          <button class="btn btn-primary plan-choose-btn" data-package="Premium" data-price="₹39,999">CHOOSE PLAN</button>
+        </div>
+
+        <!-- DELUXE PACKAGE -->
+        <div class="package-card">
+          <h3 class="package-name">DELUXE</h3>
+          <div class="package-price">₹59,999</div>
+          <div class="package-features">
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>3 Day Event Coverage</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>1000+ Edited Photos</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Highlight Video (7–10 Min)</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Cinematic Film (20 Min)</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Luxury Photo Album (12x18)</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Teaser Video (1 Min) + Drone</span>
+            </div>
+            <div class="package-feature-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Online Private Gallery</span>
+            </div>
+          </div>
+          <button class="btn btn-outline plan-choose-btn" data-package="Deluxe" data-price="₹59,999">CHOOSE PLAN</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       REVIEWS SECTION
+       ========================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">CLIENT LOVE</span>
+        <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+      </div>
+
+      <div class="reviews-carousel-wrapper">
+        <button class="carousel-nav-btn prev" id="review-prev-btn" aria-label="Previous Review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <button class="carousel-nav-btn next" id="review-next-btn" aria-label="Next Review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+
+        <div class="reviews-track-container">
+          <div class="reviews-track" id="reviews-track">
+            <!-- Review 1 -->
+            <div class="review-card">
+              <p class="review-text">"Luxora Studio made our wedding day unforgettable. The photos and video are simply amazing! Every single emotion was captured so naturally."</p>
+              <div class="review-client">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" alt="Rohit & Priya" class="review-avatar">
+                <div class="review-client-info">
+                  <span class="review-name">Rohit & Priya</span>
+                  <div class="review-stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+              <p class="review-text">"Professional team, creative ideas and great communication. Highly recommended to anyone looking for royal quality wedding storytelling."</p>
+              <div class="review-client">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" alt="Aman & Neha" class="review-avatar">
+                <div class="review-client-info">
+                  <span class="review-name">Aman & Neha</span>
+                  <div class="review-stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+              <p class="review-text">"They captured every emotion so beautifully. We couldn't have asked for a better team! The cinematic film still brings tears to our eyes."</p>
+              <div class="review-client">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" alt="Kunal & Pooja" class="review-avatar">
+                <div class="review-client-info">
+                  <span class="review-name">Kunal & Pooja</span>
+                  <div class="review-stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+              <p class="review-text">"Outstanding professionalism! The photo album quality is top notch and the drone shots of our palace wedding were breathtaking."</p>
+              <div class="review-client">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=200" alt="Vikram & Ananya" class="review-avatar">
+                <div class="review-client-info">
+                  <span class="review-name">Vikram & Ananya</span>
+                  <div class="review-stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BOOKING CTA SECTION
+       ========================================================================== -->
+  <section class="cta-section">
+    <div class="container cta-content">
+      <span class="section-label">BOOK YOUR SHOOT</span>
+      <h2 class="cta-title">LET'S CREATE MAGIC TOGETHER</h2>
+      <p class="cta-subtitle">Have a project in mind? Let's talk!</p>
+      <div class="cta-buttons">
+        <button class="btn btn-primary" id="cta-appoint-btn">BOOK AN APPOINTMENT</button>
+        <a href="https://wa.me/919876543210?text=Hello%20Luxora%20Studio%2C%20I%20am%20interested%20in%20booking%20a%20photography%20package." target="_blank" rel="noopener" class="btn btn-outline">CHAT ON WHATSAPP</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">GET IN TOUCH</span>
+        <h2 class="section-title">CONTACT US</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 class="package-name" style="margin-bottom: 24px;">STUDIO INFORMATION</h3>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <h4>Phone Number</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <h4>Email Address</h4>
+              <p>info@luxorastudio.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <h4>Studio Location</h4>
+              <p>123, City Center, New Delhi - 110001</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="+91 98765 43210" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-event">Event Type *</label>
+                <select id="contact-event" class="form-control" required>
+                  <option value="">Select Event Type</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Pre-Wedding">Pre-Wedding Shoot</option>
+                  <option value="Cinematic Videography">Cinematic Videography</option>
+                  <option value="Event Coverage">Event Coverage</option>
+                  <option value="Baby & Maternity">Baby & Maternity</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-date">Event Date *</label>
+                <input type="date" id="contact-date" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-venue">Venue / Location</label>
+                <input type="text" id="contact-venue" class="form-control" placeholder="City or Venue Name">
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" class="form-control" placeholder="Tell us about your wedding plans, dates, or vision..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">SEND INQUIRY</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+            </svg>
+            <div class="nav-logo-text">
+              <span class="nav-logo-title">LUXORA</span>
+              <span class="nav-logo-sub">STUDIO</span>
+            </div>
+          </div>
+          <p class="footer-text">We capture your moments and turn them into memories that last a lifetime.</p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">FB</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">IG</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube">YT</a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Pinterest">PIN</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">QUICK LINKS</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">SERVICES</h4>
+          <div class="footer-links">
+            <a href="#services">Wedding Photography</a>
+            <a href="#services">Pre-Wedding Shoots</a>
+            <a href="#services">Cinematic Videography</a>
+            <a href="#services">Events Coverage</a>
+            <a href="#services">Baby & Maternity</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">CONTACT INFO</h4>
+          <div class="footer-links">
+            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="mailto:info@luxorastudio.com">info@luxorastudio.com</a>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">123, City Center, New Delhi - 110001</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">INSTAGRAM</h4>
+          <div class="footer-insta-grid">
+            <div class="footer-insta-item"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=200" alt="Insta 1"></div>
+            <div class="footer-insta-item"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=200" alt="Insta 2"></div>
+            <div class="footer-insta-item"><img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80&w=200" alt="Insta 3"></div>
+            <div class="footer-insta-item"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=200" alt="Insta 4"></div>
+            <div class="footer-insta-item"><img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=200" alt="Insta 5"></div>
+            <div class="footer-insta-item"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=200" alt="Insta 6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Luxora Studio. All Rights Reserved. | <button id="open-admin-btn" style="color: var(--gold-primary); text-decoration: underline;">Demo Admin View</button></div>
+        <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS
+       ========================================================================== -->
+
+  <!-- 1. BOOKING MODAL -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="booking-modal-close">✕</button>
+      <div class="modal-header">
+        <span class="section-label">RESERVE YOUR DATES</span>
+        <h3 class="modal-title">BOOK A SHOOT</h3>
+        <p style="font-size: 0.9rem; color: var(--gold-light);" id="modal-package-selected">Selected Package: Custom Inquiry</p>
+      </div>
+
+      <form id="modal-booking-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="mb-name">Full Name *</label>
+            <input type="text" id="mb-name" class="form-control" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="mb-phone">Phone Number *</label>
+            <input type="tel" id="mb-phone" class="form-control" required placeholder="+91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="mb-email">Email Address *</label>
+            <input type="email" id="mb-email" class="form-control" required placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="mb-package">Package Plan</label>
+            <select id="mb-package" class="form-control">
+              <option value="Custom Inquiry">Custom Package</option>
+              <option value="Basic (₹19,999)">Basic (₹19,999)</option>
+              <option value="Premium (₹39,999)">Premium (₹39,999)</option>
+              <option value="Deluxe (₹59,999)">Deluxe (₹59,999)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mb-event">Event Type *</label>
+            <select id="mb-event" class="form-control" required>
+              <option value="Wedding">Wedding Ceremony</option>
+              <option value="Pre-Wedding">Pre-Wedding Shoot</option>
+              <option value="Cinematic Videography">Cinematic Videography</option>
+              <option value="Event Coverage">Event & Sangeet</option>
+              <option value="Baby & Maternity">Baby & Maternity</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mb-date">Event Date *</label>
+            <input type="date" id="mb-date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="mb-venue">Venue / City *</label>
+            <input type="text" id="mb-venue" class="form-control" placeholder="e.g. Udaipur, Delhi" required>
+          </div>
+          <div class="form-group">
+            <label for="mb-days">Number of Days</label>
+            <input type="number" id="mb-days" class="form-control" min="1" max="10" value="1">
+          </div>
+          <div class="form-group full-width">
+            <label for="mb-message">Special Instructions / Requirements</label>
+            <textarea id="mb-message" class="form-control" placeholder="Tell us more about your event layout, functions, or vision..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">SEND BOOKING REQUEST</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. SHOWREEL VIDEO MODAL -->
+  <div class="modal-overlay" id="showreel-modal">
+    <div class="modal-card" style="max-width: 900px; padding: 20px; background: #000;">
+      <button class="modal-close" id="showreel-modal-close" style="z-index: 10;">✕</button>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+        <iframe id="showreel-iframe" style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;" src="" title="Luxora Studio Showreel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="lightbox-modal">
+    <div class="lightbox-card">
+      <button class="modal-close" id="lightbox-modal-close" style="color:#fff; background: rgba(255,255,255,0.2);">✕</button>
+      
+      <button class="carousel-nav-btn prev" id="lightbox-prev-btn" style="left: -40px;">‹</button>
+      <button class="carousel-nav-btn next" id="lightbox-next-btn" style="right: -40px;">›</button>
+
+      <div class="lightbox-img-wrapper">
+        <img src="" id="lightbox-img" alt="Lightbox View">
+      </div>
+      <div class="lightbox-caption" id="lightbox-caption">Title</div>
+    </div>
+  </div>
+
+  <!-- 4. FULL GALLERY MODAL -->
+  <div class="modal-overlay" id="gallery-modal">
+    <div class="modal-card" style="max-width: 1100px;">
+      <button class="modal-close" id="gallery-modal-close">✕</button>
+      <div class="modal-header">
+        <span class="section-label">EXPANDED GALLERY</span>
+        <h3 class="modal-title">FULL PORTFOLIO SHOWCASE</h3>
+      </div>
+      <div class="portfolio-grid" id="full-gallery-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <!-- Populated via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. DEMO ADMIN MODAL -->
+  <div class="modal-overlay" id="admin-modal">
+    <div class="modal-card" style="max-width: 900px;">
+      <button class="modal-close" id="admin-modal-close">✕</button>
+      <div class="modal-header">
+        <span class="section-label">DEMO BACKEND</span>
+        <h3 class="modal-title">STORED BOOKINGS & INQUIRIES</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">View demo requests stored in LocalStorage</p>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h4 class="text-gold">Bookings Received</h4>
+        <button class="btn btn-outline btn-sm" id="clear-admin-data-btn">Clear All Data</button>
+      </div>
+
+      <div id="admin-table-container">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
